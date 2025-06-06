@@ -1,4 +1,3 @@
-import type { LiveConversation } from "../types/conversation";
 import { mockLiveConversations } from "../mocks/liveConversations";
 
 const statusColors = {

@@ -1,8 +1,5 @@
 import { useState } from "react";
-import type {
-  CategorizedConversation,
-  ConversationSentiment,
-} from "../types/conversation";
+import type { ConversationSentiment } from "../types/conversation";
 import { mockCategorizedConversations } from "../mocks/conversations";
 
 const sentimentColors = {
@@ -15,12 +12,6 @@ const sentimentIcons = {
   positive: "😊",
   negative: "😞",
   neutral: "😐",
-};
-
-const sentimentLabels = {
-  positive: "راضی",
-  negative: "ناراضی",
-  neutral: "خنثی",
 };
 
 export const CategorizedConversations = () => {

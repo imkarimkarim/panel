@@ -3,6 +3,7 @@ import { LiveConversations } from "./components/LiveConversations";
 import { Sidebar } from "./components/Sidebar";
 import { TopBar } from "./components/TopBar";
 import { FileUpload } from "./components/FileUpload";
+import { CategorizedConversations } from "./components/CategorizedConversations";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
                       <h2 className="text-xl font-semibold mb-4">
                         مکالمات دسته‌بندی شده
                       </h2>
-                      {/* Add your categorized conversations list here */}
+                      <CategorizedConversations />
                     </div>
                     <div className="bg-white rounded-lg shadow">
                       <div className="p-6 border-t">

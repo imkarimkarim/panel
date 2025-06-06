@@ -7,14 +7,25 @@ export type ConversationFeel =
   | "confused"
   | "frustrated";
 
-export interface LiveConversation {
+export type ConversationSentiment = "positive" | "negative" | "neutral";
+
+export interface BaseConversation {
   id: string;
   title: string;
   description: string;
-  status: ConversationStatus;
-  startTime: string;
-  duration: string;
   agentName: string;
   customerNumber: string;
+  startTime: string;
+  duration: string;
+}
+
+export interface LiveConversation extends BaseConversation {
+  status: ConversationStatus;
   conversationFeel: ConversationFeel;
+}
+
+export interface CategorizedConversation extends BaseConversation {
+  sentiment: ConversationSentiment;
+  category: string;
+  date: string;
 }
